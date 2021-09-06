@@ -1,0 +1,49 @@
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "sanjeev0802",
+  "email" : "sanjeev0802@gmail.com",
+  "mobile" : "0802080208",
+  "password": "sanjeev0802"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "name": "sanjeev08",
+  "password": "test123"
+}
+
+###
+
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuamVldjA4IiwicGFzc3dvcmQiOiIkMmIkMTAkeW1xaHNjaC9tNFU4ZnVqbkJpMy9YdTlVeUswNUxFTjdPamFYVm1RdjZ4QWdWemg4b3ZUcXUiLCJlbWFpbCI6InNhbmplZXYwOEBnbWFpbC5jb20iLCJtb2JpbGUiOiIwODA4MDgwODA4IiwiaWF0IjoxNjMwOTEwNTgyfQ.sp8yYVYiAxmsBnQLAb6UIokmj2oCqtdIj2FQkIoqxoM
+
+###
+GET http://localhost:3000/getuser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuamVldjA4IiwicGFzc3dvcmQiOiIkMmIkMTAkeW1xaHNjaC9tNFU4ZnVqbkJpMy9YdTlVeUswNUxFTjdPamFYVm1RdjZ4QWdWemg4b3ZUcXUiLCJlbWFpbCI6InNhbmplZXYwOEBnbWFpbC5jb20iLCJtb2JpbGUiOiIwODA4MDgwODA4IiwiaWF0IjoxNjMwOTEwNTgyfQ.sp8yYVYiAxmsBnQLAb6UIokmj2oCqtdIj2FQkIoqxoM
+### 
+POST http://localhost:3000/editProfile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuamVldjA4MDIiLCJwYXNzd29yZCI6IiQyYiQxMCR5bXFoc2NoL200VThmdWpuQmkzL1h1OVV5SzA1TEVON09qYVhWbVF2NnhBZ1Z6aDhvdlRxdSIsImVtYWlsIjoic2FuamVldjA4MDJAZ21haWwuY29tIiwibW9iaWxlIjoiMDgwMjA4MDIwOCIsImlhdCI6MTYzMDkxMDExNX0.E0yk2RJDG-P8-ECSoW-kVcEOTBgIT7fErRmfBogdeMo
+
+{
+  "newusername": "sanjeev08",
+  "newemail" : "sanjeev08@gmail.com",
+  "newmobile" : "0808080808"
+}
+### 
+POST http://localhost:3000/editPassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuamVldjA4IiwicGFzc3dvcmQiOiIkMmIkMTAkeW1xaHNjaC9tNFU4ZnVqbkJpMy9YdTlVeUswNUxFTjdPamFYVm1RdjZ4QWdWemg4b3ZUcXUiLCJlbWFpbCI6InNhbmplZXYwOEBnbWFpbC5jb20iLCJtb2JpbGUiOiIwODA4MDgwODA4IiwiaWF0IjoxNjMwOTEwNTgyfQ.sp8yYVYiAxmsBnQLAb6UIokmj2oCqtdIj2FQkIoqxoM
+
+{
+  "newpassword": "test123"
+}
+
+###
